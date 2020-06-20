@@ -47,11 +47,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="obsah.html" />
+    <Content Include="output\najdi-cestu-ven.html" />
     <Content Include="output\style.css" />
     <Content Include="template.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="output\img" />
+    <Folder Include="output\ncv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
