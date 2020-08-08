@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
@@ -21,6 +23,7 @@ namespace NsnbcGenerator
             foreach (XElement element in comics)
             {
                 string title = element.Element("title").Value;
+                DateTime date = DateTime.Parse(element.Element("date").Value);
                 string simpletext = element.Element("simpletext")?.Value;
                 string pureAftertext = simpletext ?? element.Element("aftertext").Value;
                 string aftertext = element.Element("aftertext").Value.Replace("\n", "<br>");
@@ -40,9 +43,10 @@ namespace NsnbcGenerator
                     .Replace("[[TITLE]]", title)
                     .Replace("[[AFTERTEXT]]", aftertext)
                     .Replace("[[BUTTON ROW]]", buttonrow)
+                    .Replace("[[COPYRIGHT]]", "<span style='color: darkgrey;'>" + date.ToString("d. MMMM yyyy", new CultureInfo("cs")) + "</span>")
                     .Replace("[[FACEBOOK DESCRIPTION]]", FacebookIze(pureAftertext));
                 File.WriteAllText("output\\" + index + ".html", html);
-                listContents = "<a href='" + index + ".html'>" + "#" + index + " " + title + "</a><br>" + listContents;
+                listContents = "<span style='color: darkgrey;'>(" + date.Year + ")</span>&nbsp;<a href='" + index + ".html'>" + "#" + index + " " + title + "</a><br>" + listContents;
                 if (index == last)
                 {
                     File.WriteAllText("output\\index.html", html);
