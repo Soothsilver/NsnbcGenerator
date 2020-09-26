@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet title="CSS_formatting" type="text/css" href="http://www.interglacial.com/rss/rss.css"?>
+<rss version="2.0" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+    <link>https://nsnbc.neocities.org/</link>
+    <title>Naší snahou nejlepší buď čin!</title>
+    <description>webový komiks ze skautského prostředí</description>
+    <language>cs</language>
+
+<!-- Comic strips now: -->
+[[ITEMS]]
+<!-- End of comic strips -->
+
+</channel>
+</rss>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -20,6 +21,8 @@ namespace NsnbcGenerator
             string template = File.ReadAllText("template.html");
             string obsah = File.ReadAllText("obsah.html");
             string listContents = "";
+            string rss = File.ReadAllText("nsnbc.rss");
+            List<string> rssItems = new List<string>();
             foreach (XElement element in comics)
             {
                 string title = element.Element("title").Value;
@@ -45,6 +48,7 @@ namespace NsnbcGenerator
                     .Replace("[[BUTTON ROW]]", buttonrow)
                     .Replace("[[COPYRIGHT]]", "<span style='color: darkgrey;'>" + date.ToString("d. MMMM yyyy", new CultureInfo("cs")) + "</span>")
                     .Replace("[[FACEBOOK DESCRIPTION]]", FacebookIze(pureAftertext));
+                rssItems.Add($"<item>\n <title>{title}</title>\n <link>https://nsnbc.neocities.org/{index.ToString()}.html</link>\n <description>{FacebookIze(pureAftertext)}</description>\n</item>");
                 File.WriteAllText("output\\" + index + ".html", html);
                 listContents = "<span style='color: darkgrey;'>(" + date.Year + ")</span>&nbsp;<a href='" + index + ".html'>" + "#" + index + " " + title + "</a><br>" + listContents;
                 if (index == last)
@@ -54,8 +58,11 @@ namespace NsnbcGenerator
                 index++;
             }
 
+            rssItems.Reverse();
+            rss = rss.Replace("[[ITEMS]]", string.Join("\n", rssItems));
             obsah = obsah.Replace("[[LIST]]", listContents);
             File.WriteAllText("output\\obsah.html", obsah);
+            File.WriteAllText("output\\nsnbc.rss", rss);
         }
 
         private static string FacebookIze(string aftertext)

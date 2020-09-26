@@ -43,16 +43,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="nsnbc.rss" />
     <Content Include="nsnbc.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="obsah.html" />
+    <Content Include="output\img\44.png" />
     <Content Include="output\najdi-cestu-ven.html" />
     <Content Include="output\style.css" />
     <Content Include="template.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="output\img" />
     <Folder Include="output\ncv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
