@@ -281,8 +281,21 @@ Pokud byste někdo měli názor na to, jak kreslit dívčí/ženské vlasy, tak 
         <simpletext>Jsme ve virtuálním světě, takže jí to ani nebude bolet.</simpletext>
     </comic>
     <comic>
-        <title>eRouška</title>
+        <title>Skautská pomoc</title>
         <date>2020-10-15</date>
-        <aftertext><![CDATA[<b>Naší snahou nejlepší buď čin!</b> doporučuje všem skautům nainstalovat aplikaci <a href="https://erouska.cz">eRouška.cz</a>.]]></aftertext>
+        <aftertext><![CDATA[
+Dospělí skautští dobrovolníci jsou voláni do služby -- navštivte <a href="https://www.skautskapomoc.cz/">www.skautskapomoc.cz</a>.
+
+Všichni ostatní, prosím: Pokud můžeš, zůstaň doma.
+
+Doporučuji k tomu také článek sestry Xsí, <a href="http://wirelessborder.com/blog/50-veci-ktere-delat-doma/">50 věcí, které dělat doma, když není dobrý nápad chodit ven</a>, který je inspirací pro seznam skautky z druhého panelu.     
+]]></aftertext>
+    </comic>
+    <comic>
+        <title>eRouška</title>
+        <date>2020-10-28</date>
+        <aftertext><![CDATA[<b>Naší snahou nejlepší buď čin!</b> doporučuje všem skautům nainstalovat aplikaci <a href="https://erouska.cz">eRouška.cz</a>.
+
+Toto je první komiks ze šestidílného příběhu </i>Jsme jedné krve, ty i já!</i>.]]></aftertext>
     </comic>
 </comics>
