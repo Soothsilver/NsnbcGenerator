@@ -7,7 +7,7 @@ namespace NsnbcGenerator
         public static void PublishEverything()
         {
             string dir = "output";
-            Process.Start(new ProcessStartInfo("neocities", "push --dry-run -e ncv output")
+            Process.Start(new ProcessStartInfo("neocities.bat", "push -e ncv output")
             {
 
             }).WaitForExit();
