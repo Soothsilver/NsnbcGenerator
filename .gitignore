@@ -2,3 +2,4 @@
 bin/
 obj/
 **/output/*.html
+NsnbcGenerator/ApiKey.cs

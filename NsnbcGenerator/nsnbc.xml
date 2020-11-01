@@ -305,4 +305,13 @@ Toto je první komiks ze šestidílného příběhu </i>Jsme jedné krve, ty i j
         
 Toto je druhý komiks ze šestidílného příběhu </i>Jsme jedné krve, ty i já!<i>.]]></aftertext>
     </comic>
+    <comic>
+        <title>Vlče se vždy podobá staršímu vlku</title>
+        <date>2020-11-01</date>
+        <aftertext><![CDATA[
+Pro úplnost, Akelovi rodiče odjeli autem na rodinnou chatu poté, co se na tom domluvili se svým registrovaným lékařem, aby se snížila pravděpodobnost, že se nakazí od Akely. Zůstavají samozřejmě v domácí karanténě.
+        
+Další pokyny k chování v karanténě/izolaci najdete <a href="http://www.szu.cz/tema/prevence/rady-a-doporuceni-pro-domaci-karantenu">na webu Státního zdravotnického ústavu</a>.]]></aftertext>
+        <simpletext>Rádce je vzor.</simpletext>
+    </comic>
 </comics>

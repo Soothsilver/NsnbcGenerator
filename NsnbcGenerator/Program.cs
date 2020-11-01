@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
@@ -11,9 +12,20 @@ namespace NsnbcGenerator
     internal class Program
     {
         private XDocument x;
-        
+        private static bool publish;
         public static void Main(string[] args)
         {
+            if (args.Length > 0 && args[0] == "publish")
+            {
+                Console.Write("Are you sure you want to publish? (y/n) ");
+                string answer = Console.ReadLine();
+                if (answer.Trim() != "y")
+                {
+                    return;
+                }
+
+                publish = true;
+            }
             XDocument xdoc = XDocument.Load("nsnbc.xml");
             var comics = xdoc.Descendants("comic").ToList();
             int index = 1;
@@ -63,6 +75,11 @@ namespace NsnbcGenerator
             obsah = obsah.Replace("[[LIST]]", listContents);
             File.WriteAllText("output\\obsah.html", obsah);
             File.WriteAllText("output\\nsnbc.rss", rss);
+
+            if (publish)
+            {
+                NeocitiesPublisher.PublishEverything();
+            }
         }
 
         private static string FacebookIze(string aftertext)
