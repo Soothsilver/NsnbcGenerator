@@ -356,4 +356,10 @@ Toto je čtvrtý komiks v sérii </i>Jsme jedné krve, ty i já<i>.
         <date>2020-11-06</date>
         <aftertext>A přítelem všech lidí dobré vůle. Vzorem a příkladem ohleduplnosti, porozumění a lásky.</aftertext>
     </comic>
+    <comic>
+        <title>Jsme jedné krve, ty i já!</title>
+        <comic>2020-11-08</comic>
+        <aftertext><![CDATA[Děkuji, že jste vydrželi s Akelou až do šťastného konce jeho nemoci. Ne každý má ovšem takové štěstí, že žije v komiksu pro čtenáře 7+, ve kterém se neumírá. A koneckonců, i u Akely se může ještě projevit </i>long covid<i> ještě Prosím dodržujte nadále zásady hygieny a sociálního distancování. Společně to zvládneme.]]></aftertext>
+        <simpletext>Společně to zvládneme.</simpletext>
+    </comic>
 </comics>
