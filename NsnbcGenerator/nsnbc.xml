@@ -358,8 +358,16 @@ Toto je čtvrtý komiks v sérii </i>Jsme jedné krve, ty i já<i>.
     </comic>
     <comic>
         <title>Jsme jedné krve, ty i já!</title>
-        <comic>2020-11-08</comic>
-        <aftertext><![CDATA[Děkuji, že jste vydrželi s Akelou až do šťastného konce jeho nemoci. Ne každý má ovšem takové štěstí, že žije v komiksu pro čtenáře 7+, ve kterém se neumírá. A koneckonců, i u Akely se může ještě projevit </i>long covid<i> ještě Prosím dodržujte nadále zásady hygieny a sociálního distancování. Společně to zvládneme.]]></aftertext>
+        <date>2020-11-08</date>
+        <aftertext><![CDATA[Děkuji, že jste vydrželi s Akelou až do šťastného konce jeho nemoci.
+Ne každý má ovšem takové štěstí, že žije v komiksu pro čtenáře 7+, ve kterém se neumírá. A koneckonců, i u Akely se může ještě projevit </i>long covid<i>.
+ 
+Prosím dodržujte nadále zásady hygieny a sociálního distancování. Společně to zvládneme.]]></aftertext>
         <simpletext>Společně to zvládneme.</simpletext>
+    </comic>
+    <comic>
+        <title>Raněna je jen má hrdost</title>
+        <date>2021-02-27</date>
+        <aftertext>Nová pravidla nám dávají okno příležitosti, jak získat nad virem výhodu. Prosím, zůstaňte doma.</aftertext>
     </comic>
 </comics>
